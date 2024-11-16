@@ -24,17 +24,11 @@ jobs:
       - name: Install Dependencies
         run: npm ci
 
-      # Step 4: Update vite.config.js to include the correct base URL
-      - name: Update Vite base path
-        run: |
-          echo "Updating vite.config.js to use the correct base path"
-          sed -i 's|base: "/"|base: "/chatwave/"|' vite.config.js  # Replace 'chatwave' with your repo name
-
-      # Step 5: Build the App
+      # Step 4: Build the App
       - name: Build the App
         run: npm run build
 
-      # Step 6: Deploy to GitHub Pages
+      # Step 5: Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
