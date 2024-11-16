@@ -1,6 +1,7 @@
 {
   "name": "chatwave",
   "private": true,
+  "homepage": "/chatwave",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
