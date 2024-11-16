@@ -13,7 +13,7 @@ export default function Chat() {
     useEffect(() => {
         console.log(token);
 
-        ws.current = new WebSocket(`ws://${import.meta.env.VITE_API_URL}/chat?token=${token}`);
+        ws.current = new WebSocket(`wss://${import.meta.env.VITE_API_URL}/chat?token=${token}`);
 
         ws.current.onopen = (s) => {
             console.log('Connected to WebSocket', s);
