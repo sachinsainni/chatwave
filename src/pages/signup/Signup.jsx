@@ -70,7 +70,7 @@ const SignUp = () => {
     
         if (Object.keys(validationErrors).length === 0) {
             try {
-                const response = await fetch(`https://${import.meta.env.VITE_API_URL}/register`, {  // Ensure the URL is correct
+                const response = await fetch(` ${import.meta.env.VITE_API_URL}/register`, {  // Ensure the URL is correct
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/x-www-form-urlencoded', // Or 'application/json' if you're using JSON

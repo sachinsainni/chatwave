@@ -46,7 +46,7 @@ export default function Login() {
         e.preventDefault();
         if(validate()){
             try {
-                const response = await fetch(`https://${import.meta.env.VITE_API_URL}/login`, {
+                const response = await fetch(`${import.meta.env.VITE_API_URL}/login`, {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
