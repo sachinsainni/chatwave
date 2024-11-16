@@ -16,7 +16,7 @@ export default function App() {
     <div>
       <ToastProvider>
 
-      <BrowserRouter>
+      <BrowserRouter basename='/chatwave' >
         {/* <WebSocketProvider> */}
           <Routes>
             <Route path="/" element={<Login />} />
